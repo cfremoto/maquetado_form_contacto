@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: gray;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+header h1,
+i {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.material-icons {
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: -14px;
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.contenedor-img {
+  width: 100%;
+  height: 850px;
+  background-image: url('/assets/img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+form .container .row input {
+  height: 70px;
+  border-bottom: 1px solid #fcd136;
+}
+
+form .container .row label {
+  font-size: 18px;
+  margin-left: 15px;
+  color: rgb(110, 110, 110);
+}
+
+form .container .row:nth-child(5) label {
+  text-transform: uppercase;
+}
+
+[type='checkbox'].filled-in:not(:checked) + span:not(.lever):after {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #fac039;
+  border-radius: 6px;
+}
+
+[type='checkbox'].filled-in:checked + span:not(.lever):after {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #fcd136;
+  background-color: #fcd136;
+}
+
+[type='checkbox'].filled-in:checked + span:not(.lever):before {
+  top: 0;
+  left: 1px;
+  width: 10px;
+  height: 16px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+[type='checkbox'] + span:not(.lever) {
+  padding-left: 50px;
+}
+
+.container p label span {
+  color: #000000;
+  font-size: 16px;
+}
+
+.container p label span a {
+  color: #d2af48;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.form-img {
+  width: 100%;
+}
+
+.container p {
+  margin-top: 15px;
+}
+
+.btn-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcd136;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 500;
+  height: 80px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: none;
+}
+
+.btn-large:hover {
+  background-color: #523600;
+  box-shadow: none;
+  color: #fff;
+}
+
+.contenedor-img {
+  width: 100%;
+  background-image: url('/assets/img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .contenedor-img {
+    display: none;
+  }
+}
